@@ -12,7 +12,15 @@ class MyHome0819 extends StatelessWidget {
             width: 200,
             height: 200,
             color: Colors.green[100],
-            child: CustomPaint(painter: MyPainter1()),
+            child: CustomPaint(
+              painter: MyPainter1(),
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.only(left: 50),
+                  child: Text("안녕하세요"),
+                ),
+              ),
+            ),
           ),
         ],
       ),
